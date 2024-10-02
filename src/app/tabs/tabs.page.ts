@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TabService } from '../services/tab.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(public tabService: TabService) {}
+
+  isActive(url: string): boolean {
+    return this.tabService.isActive(url);
+  }
 
 }
