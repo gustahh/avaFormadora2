@@ -5,10 +5,10 @@
     <!-- Tab 1 -->
     <ion-tab-button tab="tab1" href="/tabs/tab1">
       <ng-container *ngIf="isActive('/tabs/tab1'); else defaultIcon">
-        <ion-icon name="aperture" size="large"></ion-icon> </ng-container>
+        <ion-icon name="aperture-sharp" size="large" style="color: var(--icon-color-default);"></ion-icon> </ng-container>
 
       <ng-template #defaultIcon>
-        <ion-icon name="aperture-outline" size="large"></ion-icon> </ng-template>
+        <ion-icon name="aperture-outline" size="large" style="color: var(--icon-color-default);"></ion-icon> </ng-template>
     </ion-tab-button>
 
     <!-- Tab 2 -->
